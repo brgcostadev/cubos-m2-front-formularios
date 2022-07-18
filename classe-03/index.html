@@ -1,0 +1,37 @@
+<!-- Seu objetivo é criar um formulário de cadastro com os seguintes campos:
+- Genêro músical (elemento `<select>` com pelo menos 3 `<option>`s)
+- Música (elemento `<input type="text">` com `display: none`) -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Músicas no google</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="https://www.google.com/search" target="_blank" method="GET">
+        <div>
+            <label for="select">Estilo musical</label>
+            <select name="" id="select" required>
+                <option value=""></option>
+                <option value="bossa-nova">Bossa nova</option>
+                <option value="forro">Forró</option>
+                <option value="funk">Funk</option>
+                <option value="new-age">New age</option>
+                <option value="rock">Rock</option>
+                <option value="sertanejo">Sertanejo</option>
+            </select>
+        </div>
+
+        <div class="escondido">
+            <label>Música</label>
+            <input class="musica" name="q" type="text">
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

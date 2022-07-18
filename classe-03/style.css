@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+}
+
+div {
+    margin-bottom: 5px;
+}
+
+.escondido {
+    display: none;
+}
+
+
+.musica {
+    min-width: 270px;
+}
+

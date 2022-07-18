@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="nome">Nome</label>
+            <input id="nome" type="text" placeholder="Tião gavião" required>
+        </div>
+        <div>
+            <label for="email">E-mail</label>
+            <input id="email" type="email" placeholder="corridamaluca@cn.com" required>
+        </div>
+        <div>
+            <label for="tel">Celular</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{5}[0-9]{4}" placeholder="982101717" required>
+        </div>
+        <div>
+            <label for="password">Senha</label>
+            <input id="password" type="password" placeholder="pegueoPombo" required>
+        </div>
+        <div>
+            <label for="r-password">Repita a senha</label>
+            <input id="r-password" type="password" placeholder="pegueoPombo" required>
+        </div>
+        <div>
+            <label for="state">Estado</label>
+            <select id="state" value="" required>
+                <option value=""></option>
+                <option value="">Acre</option>
+                <option value="">Alagoas</option>
+                <option value="">Amapá</option>
+            </select>
+        </div>
+
+        <button type="submit">Enviar</button>
+        <p id="warn"></p>
+    </form>
+</body>
+</html>
